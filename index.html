@@ -59,6 +59,24 @@
     />
   </head>
   <body class="page">
+    <svg
+      class="icon-sprite"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <symbol
+        id="icon-spark"
+        viewBox="0 0 16 16"
+        fill="none"
+      >
+        <path
+          d="M8 1.5L9.95 6.05L14.5 8L9.95 9.95L8 14.5L6.05 9.95L1.5 8L6.05 6.05L8 1.5Z"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linejoin="round"
+        />
+      </symbol>
+    </svg>
     <header class="nav">
       <div class="container nav__inner">
         <a
@@ -72,17 +90,21 @@
             class="nav__logo-image media-image"
           />
         </a>
-        <button
-          class="nav__toggle"
-          type="button"
-          aria-expanded="false"
+        <input
+          class="nav__checkbox"
+          type="checkbox"
+          id="nav-toggle"
           aria-controls="primary-menu"
           aria-label="Toggle navigation"
+        />
+        <label
+          class="nav__toggle"
+          for="nav-toggle"
         >
           <span class="nav__toggle-line"></span>
           <span class="nav__toggle-line"></span>
           <span class="nav__toggle-line"></span>
-        </button>
+        </label>
         <nav
           class="nav__links"
           id="primary-menu"
@@ -168,60 +190,30 @@
               <li class="about__highlight">
                 <svg
                   class="about__highlight-icon"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
                   aria-hidden="true"
                   focusable="false"
                 >
-                  <path
-                    d="M8 1.5L9.95 6.05L14.5 8L9.95 9.95L8 14.5L6.05 9.95L1.5 8L6.05 6.05L8 1.5Z"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linejoin="round"
-                  />
+                  <use href="#icon-spark"></use>
                 </svg>
                 Welcoming, stress-free environment
               </li>
               <li class="about__highlight">
                 <svg
                   class="about__highlight-icon"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
                   aria-hidden="true"
                   focusable="false"
                 >
-                  <path
-                    d="M8 1.5L9.95 6.05L14.5 8L9.95 9.95L8 14.5L6.05 9.95L1.5 8L6.05 6.05L8 1.5Z"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linejoin="round"
-                  />
+                  <use href="#icon-spark"></use>
                 </svg>
                 Clear, transparent consultations
               </li>
               <li class="about__highlight">
                 <svg
                   class="about__highlight-icon"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
                   aria-hidden="true"
                   focusable="false"
                 >
-                  <path
-                    d="M8 1.5L9.95 6.05L14.5 8L9.95 9.95L8 14.5L6.05 9.95L1.5 8L6.05 6.05L8 1.5Z"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linejoin="round"
-                  />
+                  <use href="#icon-spark"></use>
                 </svg>
                 Personal attention for every patient
               </li>
